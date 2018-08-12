@@ -1,0 +1,47 @@
+body, main {
+	display: flex;
+}
+
+body {
+	flex-direction: column;
+	margin=0px;
+}
+
+main {
+	flex-direction: row;
+	flex: auto;
+}
+
+article {
+	flex: 2;
+}
+
+aside {
+	flex: 1;
+}
+
+article, aside {
+	overflow-y: auto;
+	height: 66vh;
+}
+
+header {
+	padding: 20px 0;
+	height: 54px;
+}
+header li.logo {
+	font-size: 54px;
+}
+
+h1 {
+	font-size: 36px;
+	margin: 0 0 20px;
+}
+
+
+/* This works well on a computer screen browser, but not on a phone
+header {
+	padding: 20px 0;
+	height: 52px;
+}
+*/

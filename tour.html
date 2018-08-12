@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />	
+	 
+    <title>The Acacia Strain</title>
+
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+  
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 25px;
+    border-color: gray;
+}
+	
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+	font-family: monospace;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+  }
+
+  div.content_section_text pre {
+    margin: 0px 0px 8px 0px;
+    padding: 0px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #000000;
+    <!-- font-weight: bold; -->
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+	color: #FFFFFF;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  
+    div.content_section_text table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 15px;
+    border-color: gray;
+  }
+
+    
+    div.content_section_text th {
+    font-family: monospace;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+  }
+  
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  } 
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+  div.content_section_text a:active {
+    color: #FFFFFF;
+  } 
+
+  div.validator {
+  }
+  
+    </style>
+	<link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+  </head>
+
+<body class="works_on_smartphone">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="main_page">
+	
+<header>
+	<!-- SOCIAL NETWORKING BUTTONS -->
+	 <div class="right">
+	
+	<!-- TWITTER SHARE BUTTON -->
+		<a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2F213.167.241.6%2F&ref_src=twsrc%5Etfw&text=The%20Acacia%20Strain&tw_p=tweetbutton&url=https%3A%2F%2Ftwitter.com%2Ftheacaciastrain" data-url="https://twitter.com/theacaciastrain" data-lang="en" data-show-count="false" target="_blank"><img src="/images/twit.svg" alt="Tweet" height=16 /></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<!-- FACEBOOK SHARE BUTTON -->
+		<a class="fb-xfbml-parse-ignore" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FTheacaciastrain%2F&amp;src=sdkpreparse','popup','width=600,height=500'); return false; " href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FTheacaciastrain%2F&amp;src=sdkpreparse"><img src="/images/fbook.svg" alt="Share" height=16 /></a>
+	 
+	 </div>
+	 
+		<ul id="pages">
+			<li class="logo"><a href="/index.html">₮</a></li>
+			<li><a href="/music.html">Music</a></li>
+			<li><a href="/tour.html">Tour</a></li>
+			<li><a href="/tweets.html">Tweets</a></li>
+			<li><a href="/log.html">Log</a></li>
+			<li><a href="/buy.html">Buy</a></li>
+		</ul>
+</header>
+
+<main>
+
+  <article>
+      <div class="content_section floating_element">
+	  
+        
+		<div class="section_header section_header_red">
+			<h5>Tour Dates</h5>    
+		</div>        
+		
+		
+		<div class="content_section_text">
+		
+	<table style="text-align:left">
+<tr>
+<th>Date</th>
+<th>City</th>
+<th>Venue</th>
+</tr>
+<tr>
+<td>June 11, 2017</td>
+<td>Seattle</td>
+<td>CenturyLink Field</td>
+</tr>
+<tr>
+<td>June 17, 2017</td>
+<td>Salem</td>
+<td>Oregon State Fair</td>
+</tr>
+<tr>
+<td>June 21, 2017</td>
+<td>Albuquerque</td>
+<td>Balloon Fiesta Park</td>
+</tr>
+<tr>
+<td>June 22, 2017</td>
+<td>Phoenix</td>
+<td>Fear Farm</td>
+</tr>
+<tr>
+<td>June 23, 2017</td>
+<td>Las Vegas</td>
+<td>Hard Rock Hotel</td>
+</tr>
+<tr>
+<td>June 24, 2017</td>
+<td>Salt Lake City</td>
+<td>Utah State Fair</td>
+</tr>
+<tr>
+<td>June 25, 2017</td>
+<td>Denver</td>
+<td>Pepsi Center</td>
+</tr>
+<tr>
+<td>June 27, 2017</td>
+<td>Nashville</td>
+<td>The Fairgrounds</td>
+</tr>
+<tr>
+<td>June 28, 2017</td>
+<td>Metairie</td>
+<td>The Shrine</td>
+</tr>
+<tr>
+<td>June 29, 2017</td>
+<td>Atlanta</td>
+<td>Lakewood Amphitheatre</td>
+</tr>
+<tr>
+<td>June 30, 2017</td>
+<td>Orlando</td>
+<td>Tinker Field</td>
+</tr>
+<tr>
+<td>July 1, 2017</td>
+<td>St. Petersburg</td>
+<td>Vinoy Park</td>
+</tr>
+<tr>
+<td>July 2, 2017</td>
+<td>West Palm Beach</td>
+<td>Coral Sky</td>
+</tr>
+<tr>
+<td>July 6, 2017</td>
+<td>Charlotte</td>
+<td>PNC Music Pavilion</td>
+</tr>
+<tr>
+<td>July 7, 2017</td>
+<td>Camden</td>
+<td>BB&amp;T Pavilion</td>
+</tr>
+<tr>
+<td>July 8, 2017</td>
+<td>Wantagh</td>
+<td>Jones Beach</td>
+</tr>
+<tr>
+<td>July 9, 2017</td>
+<td>Hartford</td>
+<td>Xfinity Theatre</td>
+</tr>
+<tr>
+<td>July 10, 2017</td>
+<td>Scranton</td>
+<td>Montage Mountain</td>
+</tr>
+<tr>
+<td>July 11, 2017</td>
+<td>Virginia Beach</td>
+<td>VA Beach Amphitheater</td>
+</tr>
+<tr>
+<td>July 12, 2017</td>
+<td>Mansfield</td>
+<td>Xfinity Center</td>
+</tr>
+<tr>
+<td>July 13, 2017</td>
+<td>Darien</td>
+<td>Darien Lake PAC</td>
+</tr>
+<tr>
+<td>July 14, 2017</td>
+<td>Burgettstown</td>
+<td>KeyBank Pavilion</td>
+</tr>
+<tr>
+<td>July 15, 2017</td>
+<td>Holmdel</td>
+<td>PNC Bank Arts Center</td>
+</tr>
+<tr>
+<td>July 16, 2017</td>
+<td>Columbia</td>
+<td>Merriweather Post</td>
+</tr>
+<tr>
+<td>July 18, 2017</td>
+<td>Cuyahoga Falls</td>
+<td>Blossom Music Center</td>
+</tr>
+<tr>
+<td>July 19, 2017</td>
+<td>Cincinnati</td>
+<td>Riverbend Music Center</td>
+</tr>
+<tr>
+<td>July 20, 2017</td>
+<td>Noblesville</td>
+<td>Klipsch Music Center</td>
+</tr>
+<tr>
+<td>July 21, 2017</td>
+<td>Auburn Hills</td>
+<td>Palace of Auburn Hills</td>
+</tr>
+<tr>
+<td>July 22, 2017</td>
+<td>Tinley Park</td>
+<td>World Music Theatre</td>
+</tr>
+<tr>
+<td>July 23, 2017</td>
+<td>Shakopee</td>
+<td>Canterbury Park</td>
+</tr>
+<tr>
+<td>July 24, 2017</td>
+<td>Milwaukee</td>
+<td>Marcus Amphitheatre</td>
+</tr>
+<tr>
+<td>July 26, 2017</td>
+<td>MD Heights</td>
+<td>Riverport Amphitheatre</td>
+</tr>
+<tr>
+<td>July 27, 2017</td>
+<td>Bonner Springs</td>
+<td>Sandstone Amphitheater</td>
+</tr>
+<tr>
+<td>July 28, 2017</td>
+<td>Dallas</td>
+<td>Starplex Pavilion</td>
+</tr>
+<tr>
+<td>July 29, 2017</td>
+<td>San Antonio</td>
+<td>AT&amp;T Center</td>
+</tr>
+<tr>
+<td>July 30, 2017</td>
+<td>Houston</td>
+<td>NRG Park</td>
+</tr>
+<tr>
+<td>Aug 1, 2017</td>
+<td>Las Cruces</td>
+<td>Intramural Field</td>
+</tr>
+<tr>
+<td>Aug 4, 2017</td>
+<td>Mountain View</td>
+<td>Shoreline Amphitheatre</td>
+</tr>
+<tr>
+<td>Aug 5, 2017</td>
+<td>San Diego</td>
+<td>Qualcomm Stadium</td>
+</tr>
+<tr>
+<td>Aug 6, 2017</td>
+<td>Pomona</td>
+<td>Fairplex</td>
+</tr>
+</table>
+
+      </div>
+	  </div>
+
+   </article>
+
+   <aside>
+	<div id="disqus_thread"></div>
+	<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = http://213.167.241.6/tour.html;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = tour; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://acaciastrain.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+	</aside>
+	
+</main></div>
+
+<footer>
+
+Made by <a href="https://twitter.com/sanjurosaves" target="_blank">Alex Allen</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>.
+
+</footer>
+
+</body>
+
+</html>
