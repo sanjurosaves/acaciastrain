@@ -7,10 +7,10 @@
 	 </div>
 	 <h1><img src="/images/tas_top.jpg" height="90" alt="The Acacia Strain"></h1>
 		<ul id="pages">
-			<li><a href="/index.html">Home</a></li>
-			<li><a href="/music.html">Music</a></li>
-			<li><a href="/tour.html">Tour</a></li>
-			<li><a href="/tweets.html">Tweets</a></li>
-			<li><a href="/log.html">Log</a></li>
-			<li><a href="/buy.html">Buy</a></li>
+			<li><a href="/index">Home</a></li>
+			<li><a href="/music">Music</a></li>
+			<li><a href="/tour">Tour</a></li>
+			<li><a href="/tweets">Tweets</a></li>
+			<li><a href="/log">Log</a></li>
+			<li><a href="/buy">Buy</a></li>
 		</ul>
