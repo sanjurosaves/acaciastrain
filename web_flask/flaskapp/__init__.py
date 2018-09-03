@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template
 from datetime import datetime
-from flaskapp.bitac2 import *
+from flaskapp.bitac import *
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
