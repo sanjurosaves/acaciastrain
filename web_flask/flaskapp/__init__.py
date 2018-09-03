@@ -1,8 +1,7 @@
-#!/home/cadilla1/virtualenv/acaciastrain.cadillacabe.com_web__flask/3.6/bin/python
 import os
-from flask import Flask, render_template, Blueprint
+from flask import Flask, render_template
 from datetime import datetime
-from flaskapp.bitac import *
+from flaskapp.bitac2 import *
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
