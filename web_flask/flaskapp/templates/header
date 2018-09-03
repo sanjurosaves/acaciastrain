@@ -7,7 +7,7 @@
 	 </div>
 	 <h1><img src="/images/tas_top.jpg" height="90" alt="The Acacia Strain"></h1>
 		<ul id="pages">
-			<li><a href="/index">Home</a></li>
+			<li><a href="/">Home</a></li>
 			<li><a href="/music">Music</a></li>
 			<li><a href="/tour">Tour</a></li>
 			<li><a href="/tweets">Tweets</a></li>
