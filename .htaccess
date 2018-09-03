@@ -1,0 +1,29 @@
+RewriteEngine On
+#RewriteCond %{REQUEST_URI} ^/*[/]?
+#RewriteCond %{REQUEST_URI} !^/*+[/]?
+#RewriteRule (.*) http://acaciastrain.cadillacabe.com/bog [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule (.*) https://acaciastrain.cadillacabe.com/$1 [R=301,L]
+
+#Options +ExecCGI
+#AddHandler fcgid-script .fcgi
+#RewriteEngine on
+#The following lines are for FastCGI:
+#RewriteCond %{REQUEST_FILENAME} !=/home/cadilla1/acaciastrain.cadillacabe.com/web_flask/application.fcgi
+#RewriteRule ^(.*)$ application.fcgi/$1 [QSA,L]
+
+AddHandler fcgid-script .fcgi
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule (/.*)$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ web_flask/application.fcgi/$1 [QSA,L]
+
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/cadilla1/acaciastrain.cadillacabe.com/web_flask"
+PassengerBaseURI "/"
+PassengerPython "/home/cadilla1/virtualenv/acaciastrain.cadillacabe.com_web__flask/3.6/bin/python3.6"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
