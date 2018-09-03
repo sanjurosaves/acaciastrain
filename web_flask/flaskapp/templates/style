@@ -190,17 +190,17 @@
   div.content_section_text a:link,
   div.content_section_text a:visited,
    div.content_section_text a:active {
-    background-color: #DCDFE6;
+/*    background-color: #DCDFE6; */
 
-    color: #000000;
+    color: #CD214F;
   }
-
+/*
   div.content_section_text a:hover {
     background-color: #000000;
 
     color: #DCDFE6;
   }
-
+*/
   div.validator {
   }
     </style>
