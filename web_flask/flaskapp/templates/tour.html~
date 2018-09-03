@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>The Acacia Strain</title>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width" />	
+
     <style  media="screen">
   * {
     margin: 0px 0px 0px 0px;
@@ -19,6 +19,13 @@
     font-family: Verdana, sans-serif;
     font-size: 11pt;
     text-align: center;
+  }
+
+  table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 25px;
+  border-color: gray;
   }
 
   div.main_page {
@@ -102,7 +109,11 @@
     padding: 4px 8px 4px 8px;
 
     color: #000000;
-    font-size: 100%;
+  font-size: 100%;
+  font-family: monospace;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
   }
 
   div.content_section_text pre {
@@ -155,6 +166,22 @@
     font-weight: bold;
   }
 
+
+  div.content_section_text table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 15px;
+  border-color: gray;
+  }
+
+  div.content_section_text th {
+  font-family: monospace;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  font-variant: normal;
+  }
+
   div.table_of_contents_item a:link,
   div.table_of_contents_item a:visited,
   div.table_of_contents_item a:active {
@@ -184,10 +211,9 @@
   div.validator {
   }
     </style>
-	
 
-<link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
-	<link href="stylesQuest.css" rel="stylesheet">
+    <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+	<link href="/stylesQuest.css" rel="stylesheet">
   </head>
 
 <body class="works_on_smartphone">
@@ -201,11 +227,9 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="main_page">
-	
 <header>
 	<!-- SOCIAL NETWORKING BUTTONS -->
 	 <div class="right">
-	
 	<!-- TWITTER SHARE BUTTON -->
 	<a href="https://twitter.com/theacaciastrain" target="_blank"><img src="/images/twit.svg" alt="Twitter" height=16 /></a>
 	<!-- FACEBOOK SHARE BUTTON -->
@@ -225,63 +249,39 @@
 <main>
 
   <article>
-    <div class="text-center">
       <div class="content_section floating_element">
-	  
-        
 		<div class="section_header section_header_red">
-			<h5>Releases</h5>    
-		</div>        
-		
-		
+			<h5>Tour Dates</h5>
+		</div>
 		<div class="content_section_text">
-	
-		<div class="section_header">
-		<h6>Gravebloom (2017) <a href="https://www.youtube.com/watch?v=wnocb50IK6g" target="_blank">Listen |</a><a target="_blank" href="http://amzn.to/2wH04dw">| Buy</a></h6> 
-		</div>
-		<div class="content_album_cover"><p><img class="large" src="/images/gravebloom.jpg" alt="Gravebloom"></p></div>
-			
-		<div class="section_header">
-		<h6>Coma Witch (2014) <a href="https://www.youtube.com/watch?v=rxLByYJHRC4" target="_blank">Listen |</a><a target="_blank" href="https://www.amazon.com/gp/product/B00N0DVQVG/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00N0DVQVG&linkCode=as2&tag=cadillacabe-20&linkId=d9e9b0bf4bc08830ed5f35d047ded480">| Buy</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=cadillacabe-20&l=am2&o=1&a=B00N0DVQVG" width="1" height="1" alt="" style="border:none !important; margin:0px !important;" /></h6> 
-		</div>
-		<div class="content_album_cover"><p><img class="large" src="/images/comaWitch.jpg" alt="Coma Witch"></p></div>
-	
-		<div class="section_header">
-		<h6>Death Is the Only Mortal (2012) <a href="https://www.youtube.com/watch?v=WBlrtodfFcE" target="_blank">Listen |</a><a target="_blank" href="http://amzn.to/2fCT3WY">| Buy</a></h6>
-		</div>	
-		<div class="content_album_cover"><p><img class="large" src="/images/deathIs.jpg" alt="Death is the Only Mortal"></p></div>
+	<table style="text-align:left">
+<tr>
+<th>Date</th>
+<th>City</th>
+<th>Venue</th>
+</tr>
+{% if shows != {} %}
+{% for show in shows.items() %}
+<tr>
+  <td>{{ show[1][0].date }}</td>
+  <td>{{ show[1][0].city }}</td>
+  <td>{{ show[1][0].venue }}</td>
+</tr>
+{% endfor %}
+{% else %}
+The Acacia Strain does not currently appear to have any shows scheduled. Please enjoy the following list of past shows.
+{% endif %}
 
-		<div class="section_header">
-		<h6>Wormwood (2010) <a href="https://www.youtube.com/watch?v=bDgTrEGASBg" target="_blank">Listen |</a><a target="_blank" href="http://amzn.to/2vzPLYv">| Buy</a></h6>
-		</div>	
-		<div class="content_album_cover"><p><img class="large" src="/images/wormwood.jpg" alt="Wormwood"></p></div>
-
-		<div class="section_header">
-		<h6>Continent (2008) <a href="https://www.youtube.com/watch?v=qF5rNGMvxrk&list=PLDBAomV2h3IPQwEawLRR43I0eBBKMbkA6" target="_blank">Listen |</a><a target="_blank" href="http://amzn.to/2wGRg7r">| Buy</a></h6>
-		</div>	
-		<div class="content_album_cover"><p><img class="large" src="/images/continent.jpg" alt="Continent"></p></div>
-
-		<div class="section_header">
-		<h6>The Dead Walk (2006) <a href="https://www.youtube.com/watch?v=a5tjHb1wsss&list=PLqAXNvwa4aZvAichgVcHlUka7caCu8GyP" target="_blank">Listen |</a><a target="_blank" href="http://amzn.to/2fE1scK">| Buy</a></h6>
-		</div>	
-		<div class="content_album_cover"><p><img class="large" src="/images/deadwalk.jpg" alt="The Dead Walk"></p></div>
-		
-		<div class="section_header">
-		<h6>3750 (2004) <a href="https://www.youtube.com/watch?v=Rv9eLjPPPs0" target="_blank">Listen |</a><a target="_blank" href="http://amzn.to/2vSB2L6">| Buy</a></h6>
-		</div>	
-		<div class="content_album_cover"><p><img class="large" src="/images/3750.jpg" alt="3750"></p></div>
-				
-		<div class="section_header">
-		<h6>...And Life Is Very Long (2002) <a href="https://www.youtube.com/watch?v=tbFkSLy0278" target="_blank">Listen |</a><a target="_blank" href="http://amzn.to/2wVy6Kv">| Buy</a></h6>
-		</div>	
-		<div class="content_album_cover"><p><img class="large" src="/images/andLife.jpg" alt="...And Life Is Very Long"></p></div>
+<tr>
+<td>June 17, 2017</td>
+<td>Salem</td>
+<td>Oregon State Fair</td>
+</tr>
+</table>
 
       </div>
-      </div>
-      </div>
-
-   </article>
-
+	  </div>
+      </article>
 </main></div>
 
 <footer>
