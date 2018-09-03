@@ -18,5 +18,4 @@ app = ScriptNameStripper(app)
 
 if __name__ == '__main__':
     WSGIServer(app).run()
-    WSGIServer(app).stop()
-
+    sys.exit()
