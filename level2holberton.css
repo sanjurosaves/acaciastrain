@@ -170,7 +170,7 @@ h2 {
 }
 h3 {
 	font-size: 28px;
-	margin: 25px 0 10px;
+/*	margin: 25px 0 10px; */
 }
 h4 {
 	font-size: 20px;
@@ -197,14 +197,4 @@ h6 {
   header .right {
   	float: none;
   }
-}
-
-/* image JS challenge */
-
-img {
-	max-width: 100%;
-}
-
-img.small {
-	width: 100px;
 }
