@@ -159,7 +159,10 @@
     font-weight: bold;
   }
 
-
+  div.content_section_text h3 {
+  font-family: veranda;
+  }
+  
   div.content_section_text table {
   display: table;
   border-collapse: separate;
