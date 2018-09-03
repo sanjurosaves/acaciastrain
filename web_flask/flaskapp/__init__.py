@@ -13,7 +13,7 @@ def current_datetim():
 
 @app.route('/time')
 def current_time():
-    return str(datetime.now())
+    return str("Sometime this will work. Sometime is now!")
 
 @app.route('/tour')
 def current_tour():
