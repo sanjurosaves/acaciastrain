@@ -145,6 +145,7 @@
 
   div.content_section_text h3 {
   font-family: Verdana, sans-serif;
+  font-weight: bold;
   }
 
   div.content_section_text table {
