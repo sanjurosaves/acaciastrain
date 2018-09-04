@@ -97,7 +97,7 @@ a {
 }
 
 article {
-	padding: 50px 15px;
+	padding: 15px 15px;
 }
 article > *:first-child {
 	margin-top: 0;
