@@ -189,7 +189,7 @@
   div.validator {
   }
 
-  div.content_album_cover {
+  div.content_album_cover img {
   display: block;
   margin-left: auto;
   margin-right: auto;
